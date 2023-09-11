@@ -2,10 +2,11 @@
   "name": "hotels_backend",
   "version": "1.0.0",
   "description": "",
-  "main": "index.ts",
+  "main": "main.ts",
   "type": "module",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "ts-node --esm src/main.ts",
     "dev": "nodemon --experimental-modules --es-module-specifier-resolution=node src/main.ts"
   },
   "author": "Vitaly Filippenko",
@@ -14,14 +15,16 @@
     "@types/body-parser": "^1.19.2",
     "@types/cookie-parser": "^1.4.4",
     "@types/cors": "^2.8.14",
+    "@types/express": "^4.17.17",
+    "body-parser": "^1.20.2",
+    "dotenv": "^16.3.1",
     "express": "^4.18.2",
     "nodemon": "^3.0.1",
     "sequelize": "^6.33.0",
+    "ts-node": "^10.9.1",
     "typescript": "^5.2.2"
   },
   "dependencies": {
-    "@types/express": "github:types/express",
-    "dotenv": "^16.3.1",
-    "ts-node": "^10.9.1"
+    "pg": "^8.11.3"
   }
 }
